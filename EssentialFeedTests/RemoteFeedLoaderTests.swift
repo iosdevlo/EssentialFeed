@@ -91,9 +91,9 @@ class RemoteFeedLoaderTests: XCTestCase {
                 url: requestedURLs[index],
                 statusCode: code,
                 httpVersion: nil,
-                headerFields: nil)
+                headerFields: nil)!
             
-            messages[index].completion(.success(response!))
+            messages[index].completion(.success(response))
         }
     }
 }
