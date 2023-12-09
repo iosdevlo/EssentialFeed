@@ -16,6 +16,7 @@
 		ABBFD0AE2B212C0E008DF28C /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBFD0AD2B212C0E008DF28C /* RemoteFeedLoader.swift */; };
 		ABBFD0B02B23D623008DF28C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBFD0AF2B23D623008DF28C /* HTTPClient.swift */; };
 		ABBFD0B22B23D687008DF28C /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBFD0B12B23D687008DF28C /* FeedItemsMapper.swift */; };
+		ABBFD0B62B24019E008DF28C /* URLSessionHTTPCLientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBFD0B52B24019E008DF28C /* URLSessionHTTPCLientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		ABBFD0AD2B212C0E008DF28C /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		ABBFD0AF2B23D623008DF28C /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		ABBFD0B12B23D687008DF28C /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		ABBFD0B52B24019E008DF28C /* URLSessionHTTPCLientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPCLientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		ABBFD0992B1FF6FE008DF28C /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				ABBFD0B42B240183008DF28C /* New Group */,
 				ABBFD0B32B23DD14008DF28C /* FeedAPI */,
 			);
 			path = EssentialFeedTests;
@@ -120,8 +123,16 @@
 			isa = PBXGroup;
 			children = (
 				ABBFD0AA2B21193C008DF28C /* RemoteFeedLoaderTests.swift */,
+				ABBFD0B52B24019E008DF28C /* URLSessionHTTPCLientTests.swift */,
 			);
 			path = FeedAPI;
+			sourceTree = "<group>";
+		};
+		ABBFD0B42B240183008DF28C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABBFD0AB2B21193C008DF28C /* RemoteFeedLoaderTests.swift in Sources */,
+				ABBFD0B62B24019E008DF28C /* URLSessionHTTPCLientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
