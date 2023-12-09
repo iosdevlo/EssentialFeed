@@ -110,7 +110,8 @@ final class URLSessionHTTPClientTests: XCTestCase {
         makeSUT().get(from: anyURL()) { result in
             switch result {
             case let .success(receivedData, receivedResponse):
-                XCTAssertEqual(receivedData, Data())
+                let emptyData = Data()
+                XCTAssertEqual(receivedData, emptyData)
                 XCTAssertEqual(receivedResponse.url, response.url)
                 XCTAssertEqual(receivedResponse.statusCode, response.statusCode)
                 
