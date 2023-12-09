@@ -17,7 +17,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     func test_load_requestDataFromURL() {
-        let url = URL(string: "https://any-url.com")!
+        let url = anyURL()
         let (sut, client) = makeSUT(url: url)
 
         sut.load { _ in }
@@ -77,7 +77,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     func test_load_deliversItemsOn200HTTPResponseWithValidJSONItems() {
         let (sut, client) = makeSUT()
         
-        let item1 = makeItem(id: UUID(), imageURL: URL(string: "https://a-url.com")!)
+        let item1 = makeItem(id: UUID(), imageURL: anyURL())
         
         let item2 = makeItem(id: UUID(), 
                              description: "a description",
@@ -93,9 +93,8 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     func test_load_doesNotDeliverResultAfterSUTInstanceHasBeenDeallocated() {
-        let url = URL(string: "https://any-url.com")!
         let client = HTTPClientSpy()
-        var sut: RemoteFeedLoader? = RemoteFeedLoader(url: url, client: client)
+        var sut: RemoteFeedLoader? = RemoteFeedLoader(url: anyURL(), client: client)
         
         var capturedResults = [RemoteFeedLoader.Result]()
         sut?.load { capturedResults.append($0)}
@@ -115,6 +114,10 @@ class RemoteFeedLoaderTests: XCTestCase {
         trackForMemoryLeaks(client)
         
         return (sut, client)
+    }
+    
+    private func anyURL() -> URL {
+        return URL(string: "https://any-url.com")!
     }
     
     private func failure(_ error: RemoteFeedLoader.Error) -> RemoteFeedLoader.Result {
