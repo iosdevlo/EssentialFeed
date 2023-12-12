@@ -14,3 +14,9 @@ extension XCTestCase {
         }
     }
 }
+
+extension XCTestCase {
+    func anyURL() -> URL {
+        return URL(string: "https://any-url.com")!
+    }
+}
