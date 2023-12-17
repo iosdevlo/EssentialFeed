@@ -133,6 +133,7 @@
 		AB20CAE42B2B29D100EC81EF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AB20CAF12B2F434500EC81EF /* FeedStoreSpecs.swift */,
 				AB20CAE22B2B29B600EC81EF /* FeedStoreSpy.swift */,
 				AB20CAE92B2C0B6800EC81EF /* FeedCacheTestHelpers.swift */,
 				AB20CAF32B2F43E000EC81EF /* XCTTestCase+FeedStore.swift */,
@@ -148,7 +149,6 @@
 				AB20CAE52B2C0A0800EC81EF /* ValidateFeedCacheUseCaseTests.swift */,
 				AB20CAED2B2D340700EC81EF /* CodableFeedStoreTests.swift */,
 				AB20CAE42B2B29D100EC81EF /* Helpers */,
-				AB20CAF12B2F434500EC81EF /* FeedStoreSpecs.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
