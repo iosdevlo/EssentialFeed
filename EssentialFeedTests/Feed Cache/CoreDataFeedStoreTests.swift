@@ -30,6 +30,10 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
         assertThatInsertDeliversNoErrorOnEmptyCache(on: makeSUT())
     }
     
+    func test_insert_deliversNoErrorOnNonEmptyCache() {
+        assertThatInsertDeliversNoErrorOnNonEmptyCache(on: makeSUT())
+    }
+    
     func test_delete_deliversNoErrorOnEmptyCache() {
         
     }
@@ -47,10 +51,6 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
     
     func test_delete_emptiesPreviouslyInsertedCache() {
-        
-    }
-    
-    func test_insert_deliversNoErrorOnNonEmptyCache() {
         
     }
     
