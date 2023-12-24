@@ -28,10 +28,10 @@
                                             <rect key="frame" x="20" y="17" width="353" height="546"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8mD-ch-ZvR" userLabel="Location Container">
-                                                    <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="30"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dr4-la-Scv" userLabel="Pin Container">
-                                                            <rect key="frame" x="0.0" y="0.0" width="10" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="10" height="40"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t8i-yT-vHS">
                                                                     <rect key="frame" x="0.0" y="-3" width="19.666666666666668" height="20"/>
@@ -49,19 +49,19 @@
                                                                 <constraint firstAttribute="width" constant="10" id="ygz-oy-h18"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location, Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4X-n7-3Mp">
-                                                            <rect key="frame" x="16.000000000000007" y="0.0" width="125.66666666666669" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location, Location" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4X-n7-3Mp">
+                                                            <rect key="frame" x="16" y="0.0" width="337" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="vwz-6J-R7U"/>
+                                                        <constraint firstAttribute="height" constant="40" id="vwz-6J-R7U"/>
                                                     </constraints>
                                                 </stackView>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3r8-7H-2X0" userLabel="Image Container">
-                                                    <rect key="frame" x="0.0" y="40" width="353" height="353"/>
+                                                    <rect key="frame" x="0.0" y="50" width="353" height="353"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-gK-aOg">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
@@ -82,7 +82,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neu-oe-mu5">
-                                                    <rect key="frame" x="0.0" y="403" width="349" height="143"/>
+                                                    <rect key="frame" x="0.0" y="413" width="349" height="133"/>
                                                     <string key="text">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,8 +90,8 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="8mD-ch-ZvR" firstAttribute="width" secondItem="SYx-Cd-xbd" secondAttribute="width" multiplier="0.401322" id="BPV-b6-rXX"/>
                                                 <constraint firstItem="3r8-7H-2X0" firstAttribute="width" secondItem="SYx-Cd-xbd" secondAttribute="width" id="Juh-3b-OZ9"/>
+                                                <constraint firstAttribute="trailing" secondItem="8mD-ch-ZvR" secondAttribute="trailing" id="dSe-K1-Jdy"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
