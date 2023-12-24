@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="bZT-Ge-X8S">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="bZT-Ge-X8S" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bZT-Ge-X8S" id="F86-kd-h9Z">
@@ -102,6 +102,12 @@
                                         <constraint firstItem="SYx-Cd-xbd" firstAttribute="top" secondItem="F86-kd-h9Z" secondAttribute="topMargin" priority="999" constant="6" id="n1E-wu-spV"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Neu-oe-mu5" id="QYI-xW-KX4"/>
+                                    <outlet property="feedImageView" destination="4ja-gK-aOg" id="DCi-hc-Xk7"/>
+                                    <outlet property="locationContainer" destination="8mD-ch-ZvR" id="qdb-bg-Dte"/>
+                                    <outlet property="locationLabel" destination="S4X-n7-3Mp" id="Yzd-gz-P6N"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
