@@ -60,6 +60,7 @@
 		ABDFA1A62B37DD290099F8AD /* XCTTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBFD0B72B251A6B008DF28C /* XCTTestCase+MemoryLeakTracking.swift */; };
 		ABDFA1A82B37E9D60099F8AD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1A72B37E9D60099F8AD /* FeedViewController.swift */; };
 		ABDFA1D02B3A287A0099F8AD /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1CF2B3A287A0099F8AD /* FeedImageCell.swift */; };
+		ABDFA1D22B3A3E120099F8AD /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1D12B3A3E120099F8AD /* UIView+Shimmer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 		ABBFD0CB2B254AEE008DF28C /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
 		ABDFA1A72B37E9D60099F8AD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		ABDFA1CF2B3A287A0099F8AD /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
+		ABDFA1D12B3A3E120099F8AD /* UIView+Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +334,7 @@
 				AB71F4162B373D5600DE2C25 /* Info.plist */,
 				ABDFA1A72B37E9D60099F8AD /* FeedViewController.swift */,
 				ABDFA1CF2B3A287A0099F8AD /* FeedImageCell.swift */,
+				ABDFA1D12B3A3E120099F8AD /* UIView+Shimmer.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -715,6 +718,7 @@
 			files = (
 				AB71F40D2B373D5400DE2C25 /* ViewController.swift in Sources */,
 				AB71F4092B373D5400DE2C25 /* AppDelegate.swift in Sources */,
+				ABDFA1D22B3A3E120099F8AD /* UIView+Shimmer.swift in Sources */,
 				AB71F40B2B373D5400DE2C25 /* SceneDelegate.swift in Sources */,
 				ABDFA1A82B37E9D60099F8AD /* FeedViewController.swift in Sources */,
 				ABDFA1D02B3A287A0099F8AD /* FeedImageCell.swift in Sources */,
