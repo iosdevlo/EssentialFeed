@@ -64,6 +64,7 @@
 		ABDFA1D62B3B5A240099F8AD /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1D52B3B5A240099F8AD /* FeedImageDataLoader.swift */; };
 		ABDFA1D92B3B5CFA0099F8AD /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1D82B3B5CFA0099F8AD /* FeedRefreshViewController.swift */; };
 		ABDFA1DB2B3B610F0099F8AD /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1DA2B3B610F0099F8AD /* FeedImageCellController.swift */; };
+		ABDFA1DD2B3B65120099F8AD /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1DC2B3B65120099F8AD /* FeedUIComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,7 @@
 		ABDFA1D52B3B5A240099F8AD /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		ABDFA1D82B3B5CFA0099F8AD /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
 		ABDFA1DA2B3B610F0099F8AD /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
+		ABDFA1DC2B3B65120099F8AD /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +343,7 @@
 				ABDFA1D42B3B5A100099F8AD /* Controllers */,
 				ABDFA1D32B3B5A050099F8AD /* Views */,
 				ABDFA1D72B3B5A430099F8AD /* FeedImageLoader */,
+				ABDFA1DC2B3B65120099F8AD /* FeedUIComposer.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -758,6 +761,7 @@
 				ABDFA1D62B3B5A240099F8AD /* FeedImageDataLoader.swift in Sources */,
 				ABDFA1A82B37E9D60099F8AD /* FeedViewController.swift in Sources */,
 				ABDFA1D02B3A287A0099F8AD /* FeedImageCell.swift in Sources */,
+				ABDFA1DD2B3B65120099F8AD /* FeedUIComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
