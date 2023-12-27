@@ -8,7 +8,7 @@
 import UIKit
 
 final class FeedImageCellController {
-    private var viewModel: FeedImageViewModel<UIImage>
+    private let viewModel: FeedImageViewModel<UIImage>
     
     init(viewModel: FeedImageViewModel<UIImage>) {
         self.viewModel = viewModel
@@ -29,7 +29,7 @@ final class FeedImageCellController {
     }
     
     private func binded(_ cell: FeedImageCell) -> FeedImageCell {
-        cell.locationContainer.isHidden = viewModel.hasLocation
+        cell.locationContainer.isHidden = !viewModel.hasLocation
         cell.locationLabel.text = viewModel.location
         cell.descriptionLabel.text = viewModel.description
         cell.onRetry = viewModel.loadImageData

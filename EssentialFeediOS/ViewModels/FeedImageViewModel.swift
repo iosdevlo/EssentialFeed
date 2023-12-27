@@ -57,5 +57,6 @@ final class FeedImageViewModel<Image> {
     
     func cancelImageDataLoad() {
         task?.cancel()
+        task = nil
     }
 }
