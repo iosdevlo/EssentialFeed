@@ -119,6 +119,7 @@
                         <connections>
                             <outlet property="dataSource" destination="CXu-4s-r4c" id="qHg-aQ-yYE"/>
                             <outlet property="delegate" destination="CXu-4s-r4c" id="i1g-v0-hRB"/>
+                            <outlet property="prefetchDataSource" destination="CXu-4s-r4c" id="GGX-ei-R7x"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="n5Y-ao-ubx">
