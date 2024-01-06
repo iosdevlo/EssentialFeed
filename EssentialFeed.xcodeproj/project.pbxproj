@@ -50,7 +50,11 @@
 		AB5546792B49F41C00A34A48 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5546782B49F41C00A34A48 /* ErrorView.swift */; };
 		AB55467B2B4A0BCA00A34A48 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55467A2B4A0BCA00A34A48 /* FeedErrorViewModel.swift */; };
 		AB55467E2B4A0C0600A34A48 /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55467D2B4A0C0600A34A48 /* FeedPresenterTests.swift */; };
-		AB5546812B4A173600A34A48 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB5546832B4A173600A34A48 /* Feed.strings */; };
+		AB5546892B4A1AA800A34A48 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5546882B4A1AA800A34A48 /* FeedErrorViewModel.swift */; };
+		AB55468B2B4A1AC500A34A48 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55468A2B4A1AC500A34A48 /* FeedLoadingViewModel.swift */; };
+		AB55468D2B4A1AD700A34A48 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55468C2B4A1AD700A34A48 /* FeedViewModel.swift */; };
+		AB55468F2B4A1B7600A34A48 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55468E2B4A1B7600A34A48 /* FeedPresenter.swift */; };
+		AB5546902B4A1C7600A34A48 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB5546832B4A173600A34A48 /* Feed.strings */; };
 		AB71F4092B373D5400DE2C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F4082B373D5400DE2C25 /* AppDelegate.swift */; };
 		AB71F40B2B373D5400DE2C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F40A2B373D5400DE2C25 /* SceneDelegate.swift */; };
 		AB71F4122B373D5600DE2C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB71F4112B373D5600DE2C25 /* Assets.xcassets */; };
@@ -208,6 +212,10 @@
 		AB55467D2B4A0C0600A34A48 /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		AB5546822B4A173600A34A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		AB5546842B4A173800A34A48 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		AB5546882B4A1AA800A34A48 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
+		AB55468A2B4A1AC500A34A48 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
+		AB55468C2B4A1AD700A34A48 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		AB55468E2B4A1B7600A34A48 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		AB71F4012B373C3300DE2C25 /* EssentialFeedAPIEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeedAPIEndToEndTests.xctestplan; sourceTree = "<group>"; };
 		AB71F4062B373D5400DE2C25 /* EssentialFeediOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialFeediOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB71F4082B373D5400DE2C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -446,6 +454,17 @@
 			isa = PBXGroup;
 			children = (
 				AB55467D2B4A0C0600A34A48 /* FeedPresenterTests.swift */,
+			);
+			path = "Feed Presentation";
+			sourceTree = "<group>";
+		};
+		AB5546862B4A1A9400A34A48 /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AB5546882B4A1AA800A34A48 /* FeedErrorViewModel.swift */,
+				AB55468A2B4A1AC500A34A48 /* FeedLoadingViewModel.swift */,
+				AB55468C2B4A1AD700A34A48 /* FeedViewModel.swift */,
+				AB55468E2B4A1B7600A34A48 /* FeedPresenter.swift */,
 				AB5546832B4A173600A34A48 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
@@ -525,6 +544,7 @@
 		ABBFD08D2B1FF6FE008DF28C /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				AB5546862B4A1A9400A34A48 /* Feed Presentation */,
 				ABBFD08F2B1FF6FE008DF28C /* EssentialFeed.docc */,
 				ABBFD0AC2B212BF0008DF28C /* FeedAPI */,
 				ABBFD0A92B1FFCCD008DF28C /* FeedFeature */,
@@ -873,6 +893,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5546902B4A1C7600A34A48 /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,7 +901,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5546812B4A173600A34A48 /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -965,6 +985,8 @@
 				AB41BB2B2B3013D300F4FD0C /* CoreDataHelpers.swift in Sources */,
 				ABBFD0A82B1FFC2A008DF28C /* FeedLoader.swift in Sources */,
 				AB41BB222B3000C100F4FD0C /* CoreDataFeedStore.swift in Sources */,
+				AB5546892B4A1AA800A34A48 /* FeedErrorViewModel.swift in Sources */,
+				AB55468D2B4A1AD700A34A48 /* FeedViewModel.swift in Sources */,
 				AB41BB2D2B30149100F4FD0C /* ManagedCache.swift in Sources */,
 				ABBFD0B22B23D687008DF28C /* FeedItemsMapper.swift in Sources */,
 				AB20CADD2B29DAB700EC81EF /* RemoteFeedItem.swift in Sources */,
@@ -972,6 +994,8 @@
 				ABBFD0A62B1FF9F0008DF28C /* FeedImage.swift in Sources */,
 				AB41BB2F2B3014BA00F4FD0C /* ManagedFeedImage.swift in Sources */,
 				AB20CAD82B2965B400EC81EF /* LocalFeedLoader.swift in Sources */,
+				AB55468B2B4A1AC500A34A48 /* FeedLoadingViewModel.swift in Sources */,
+				AB55468F2B4A1B7600A34A48 /* FeedPresenter.swift in Sources */,
 				ABBFD0902B1FF6FE008DF28C /* EssentialFeed.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
