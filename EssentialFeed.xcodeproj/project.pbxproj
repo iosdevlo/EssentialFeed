@@ -52,6 +52,7 @@
 		AB5546942B4A1E5400A34A48 /* UIRefreshControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5546932B4A1E5400A34A48 /* UIRefreshControl+Extensions.swift */; };
 		AB55469D2B4A221F00A34A48 /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5546222B3DE49F00A34A48 /* FeedImagePresenter.swift */; };
 		AB55469E2B4A222300A34A48 /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5546912B4A1D4E00A34A48 /* FeedImageViewModel.swift */; };
+		AB55469F2B4C858E00A34A48 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1D52B3B5A240099F8AD /* FeedImageDataLoader.swift */; };
 		AB71F4092B373D5400DE2C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F4082B373D5400DE2C25 /* AppDelegate.swift */; };
 		AB71F40B2B373D5400DE2C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71F40A2B373D5400DE2C25 /* SceneDelegate.swift */; };
 		AB71F4122B373D5600DE2C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB71F4112B373D5600DE2C25 /* Assets.xcassets */; };
@@ -79,7 +80,6 @@
 		ABDFA1A82B37E9D60099F8AD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1A72B37E9D60099F8AD /* FeedViewController.swift */; };
 		ABDFA1D02B3A287A0099F8AD /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1CF2B3A287A0099F8AD /* FeedImageCell.swift */; };
 		ABDFA1D22B3A3E120099F8AD /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1D12B3A3E120099F8AD /* UIView+Shimmer.swift */; };
-		ABDFA1D62B3B5A240099F8AD /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1D52B3B5A240099F8AD /* FeedImageDataLoader.swift */; };
 		ABDFA1DB2B3B610F0099F8AD /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1DA2B3B610F0099F8AD /* FeedImageCellController.swift */; };
 		ABDFA1DD2B3B65120099F8AD /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFA1DC2B3B65120099F8AD /* FeedUIComposer.swift */; };
 /* End PBXBuildFile section */
@@ -553,6 +553,7 @@
 		ABBFD0A92B1FFCCD008DF28C /* FeedFeature */ = {
 			isa = PBXGroup;
 			children = (
+				ABDFA1D52B3B5A240099F8AD /* FeedImageDataLoader.swift */,
 				ABBFD0A52B1FF9F0008DF28C /* FeedImage.swift */,
 				ABBFD0A72B1FFC2A008DF28C /* FeedLoader.swift */,
 			);
@@ -622,7 +623,6 @@
 		ABDFA1D72B3B5A430099F8AD /* FeedImageLoader */ = {
 			isa = PBXGroup;
 			children = (
-				ABDFA1D52B3B5A240099F8AD /* FeedImageDataLoader.swift */,
 			);
 			path = FeedImageLoader;
 			sourceTree = "<group>";
@@ -923,7 +923,6 @@
 				ABDFA1D22B3A3E120099F8AD /* UIView+Shimmer.swift in Sources */,
 				AB5546942B4A1E5400A34A48 /* UIRefreshControl+Extensions.swift in Sources */,
 				AB71F40B2B373D5400DE2C25 /* SceneDelegate.swift in Sources */,
-				ABDFA1D62B3B5A240099F8AD /* FeedImageDataLoader.swift in Sources */,
 				AB5546642B444E4900A34A48 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				ABDFA1A82B37E9D60099F8AD /* FeedViewController.swift in Sources */,
 				ABDFA1D02B3A287A0099F8AD /* FeedImageCell.swift in Sources */,
@@ -969,6 +968,7 @@
 				AB41BB222B3000C100F4FD0C /* CoreDataFeedStore.swift in Sources */,
 				AB5546892B4A1AA800A34A48 /* FeedErrorViewModel.swift in Sources */,
 				AB55468D2B4A1AD700A34A48 /* FeedViewModel.swift in Sources */,
+				AB55469F2B4C858E00A34A48 /* FeedImageDataLoader.swift in Sources */,
 				AB41BB2D2B30149100F4FD0C /* ManagedCache.swift in Sources */,
 				ABBFD0B22B23D687008DF28C /* FeedItemsMapper.swift in Sources */,
 				AB20CADD2B29DAB700EC81EF /* RemoteFeedItem.swift in Sources */,
@@ -1134,8 +1134,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Feed;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1164,8 +1163,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Feed;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
