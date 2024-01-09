@@ -45,9 +45,7 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
     
     // MARK: - HELPERS
     private func getFeedResult(file: StaticString = #filePath, line: UInt = #line) -> FeedLoader.Result? {
-        let client = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
-        let loader = RemoteFeedLoader(url: feedTestServerURL, client: client)
-        trackForMemoryLeaks(client, file: file, line: line)
+        let loader = RemoteFeedLoader(url: feedTestServerURL, client: ephemeralClient())
         trackForMemoryLeaks(loader, file: file, line: line)
         
         let expectation = expectation(description: "Wait for load completion")
@@ -63,14 +61,13 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
     }
     
     private func getFeedImageDataResult(file: StaticString = #filePath, line: UInt = #line) -> FeedImageDataLoader.Result? {
-        let testServerURL = feedTestServerURL.appendingPathComponent("73A7F70C-75DA-4C2E-B5A3-EED40DC53AA6/image")
-        let client = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
-        let loader = RemoteFeedImageDataLoader(client: client)
-        trackForMemoryLeaks(client, file: file, line: line)
+        let loader = RemoteFeedImageDataLoader(client: ephemeralClient())
         trackForMemoryLeaks(loader, file: file, line: line)
         
         let expectation = expectation(description: "Wait for load completion")
         
+        let testServerURL = feedTestServerURL.appendingPathComponent("73A7F70C-75DA-4C2E-B5A3-EED40DC53AA6/image")
+
         var receivedResult: FeedImageDataLoader.Result?
         _ = loader.loadImageData(from: testServerURL) { result in
             receivedResult = result
@@ -85,6 +82,11 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
         return URL(string: "https://essentialdeveloper.com/feed-case-study/test-api/feed/")!
     }
     
+    private func ephemeralClient(file: StaticString = #filePath, line: UInt = #line) -> HTTPClient {
+        let client = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
+        trackForMemoryLeaks(client, file: file, line: line)
+        return client
+    }
     private func expectedImage(at index: Int) -> FeedImage {
         return FeedImage(id: id(at: index),
                         description: description(at: index),
