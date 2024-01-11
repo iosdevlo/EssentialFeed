@@ -12,6 +12,14 @@ extension XCTestCase {
         return URL(string: "https://any-url.com")!
     }
     
+    func aURL() -> URL {
+        return URL(string: "http://a-url.com")!
+    }
+    
+    func anotherURL() -> URL {
+        return URL(string: "http://another-url.com")!
+    }
+    
     func anyNSError() -> NSError {
         return NSError(domain: "any error", code: 0)
     }
