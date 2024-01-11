@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABB400E92B5021050033C6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB400E82B5021050033C6E8 /* AppDelegate.swift */; };
-		ABB400EB2B5021050033C6E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB400EA2B5021050033C6E8 /* SceneDelegate.swift */; };
-		ABB400ED2B5021050033C6E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB400EC2B5021050033C6E8 /* ViewController.swift */; };
-		ABB400F02B5021050033C6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB400EE2B5021050033C6E8 /* Main.storyboard */; };
-		ABB400F22B5021070033C6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB400F12B5021070033C6E8 /* Assets.xcassets */; };
-		ABB400F52B5021070033C6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB400F32B5021070033C6E8 /* LaunchScreen.storyboard */; };
-		ABB401002B5021070033C6E8 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB400FF2B5021070033C6E8 /* EssentialAppTests.swift */; };
-		ABB4010A2B5021070033C6E8 /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB401092B5021070033C6E8 /* EssentialAppUITests.swift */; };
-		ABB4010C2B5021070033C6E8 /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4010B2B5021070033C6E8 /* EssentialAppUITestsLaunchTests.swift */; };
+		ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A6F2B50245300764EE7 /* AppDelegate.swift */; };
+		ABD92A722B50245300764EE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A712B50245300764EE7 /* SceneDelegate.swift */; };
+		ABD92A742B50245300764EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A732B50245300764EE7 /* ViewController.swift */; };
+		ABD92A772B50245300764EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A752B50245300764EE7 /* Main.storyboard */; };
+		ABD92A792B50245400764EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A782B50245400764EE7 /* Assets.xcassets */; };
+		ABD92A7C2B50245400764EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A7A2B50245400764EE7 /* LaunchScreen.storyboard */; };
+		ABD92A872B50245400764EE7 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A862B50245400764EE7 /* EssentialAppTests.swift */; };
+		ABD92A912B50245400764EE7 /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A902B50245400764EE7 /* EssentialAppUITests.swift */; };
+		ABD92A932B50245400764EE7 /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A922B50245400764EE7 /* EssentialAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ABB400FC2B5021070033C6E8 /* PBXContainerItemProxy */ = {
+		ABD92A832B50245400764EE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ABB400DD2B5021050033C6E8 /* Project object */;
+			containerPortal = ABD92A642B50245300764EE7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ABB400E42B5021050033C6E8;
+			remoteGlobalIDString = ABD92A6B2B50245300764EE7;
 			remoteInfo = EssentialApp;
 		};
-		ABB401062B5021070033C6E8 /* PBXContainerItemProxy */ = {
+		ABD92A8D2B50245400764EE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ABB400DD2B5021050033C6E8 /* Project object */;
+			containerPortal = ABD92A642B50245300764EE7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ABB400E42B5021050033C6E8;
+			remoteGlobalIDString = ABD92A6B2B50245300764EE7;
 			remoteInfo = EssentialApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ABB400E52B5021050033C6E8 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABB400E82B5021050033C6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABB400EA2B5021050033C6E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABB400EC2B5021050033C6E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABB400EF2B5021050033C6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ABB400F12B5021070033C6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABB400F42B5021070033C6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABB400F62B5021070033C6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABB400FB2B5021070033C6E8 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABB400FF2B5021070033C6E8 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
-		ABB401052B5021070033C6E8 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABB401092B5021070033C6E8 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
-		ABB4010B2B5021070033C6E8 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABD92A6C2B50245300764EE7 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD92A6F2B50245300764EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABD92A712B50245300764EE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ABD92A732B50245300764EE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABD92A762B50245300764EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABD92A782B50245400764EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABD92A7B2B50245400764EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABD92A7D2B50245400764EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD92A822B50245400764EE7 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD92A862B50245400764EE7 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
+		ABD92A8C2B50245400764EE7 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD92A902B50245400764EE7 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
+		ABD92A922B50245400764EE7 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ABB400E22B5021050033C6E8 /* Frameworks */ = {
+		ABD92A692B50245300764EE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABB400F82B5021070033C6E8 /* Frameworks */ = {
+		ABD92A7F2B50245400764EE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABB401022B5021070033C6E8 /* Frameworks */ = {
+		ABD92A892B50245400764EE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,53 +76,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ABB400DC2B5021050033C6E8 = {
+		ABD92A632B50245300764EE7 = {
 			isa = PBXGroup;
 			children = (
-				ABB400E72B5021050033C6E8 /* EssentialApp */,
-				ABB400FE2B5021070033C6E8 /* EssentialAppTests */,
-				ABB401082B5021070033C6E8 /* EssentialAppUITests */,
-				ABB400E62B5021050033C6E8 /* Products */,
+				ABD92A6E2B50245300764EE7 /* EssentialApp */,
+				ABD92A852B50245400764EE7 /* EssentialAppTests */,
+				ABD92A8F2B50245400764EE7 /* EssentialAppUITests */,
+				ABD92A6D2B50245300764EE7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ABB400E62B5021050033C6E8 /* Products */ = {
+		ABD92A6D2B50245300764EE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABB400E52B5021050033C6E8 /* EssentialApp.app */,
-				ABB400FB2B5021070033C6E8 /* EssentialAppTests.xctest */,
-				ABB401052B5021070033C6E8 /* EssentialAppUITests.xctest */,
+				ABD92A6C2B50245300764EE7 /* EssentialApp.app */,
+				ABD92A822B50245400764EE7 /* EssentialAppTests.xctest */,
+				ABD92A8C2B50245400764EE7 /* EssentialAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABB400E72B5021050033C6E8 /* EssentialApp */ = {
+		ABD92A6E2B50245300764EE7 /* EssentialApp */ = {
 			isa = PBXGroup;
 			children = (
-				ABB400E82B5021050033C6E8 /* AppDelegate.swift */,
-				ABB400EA2B5021050033C6E8 /* SceneDelegate.swift */,
-				ABB400EC2B5021050033C6E8 /* ViewController.swift */,
-				ABB400EE2B5021050033C6E8 /* Main.storyboard */,
-				ABB400F12B5021070033C6E8 /* Assets.xcassets */,
-				ABB400F32B5021070033C6E8 /* LaunchScreen.storyboard */,
-				ABB400F62B5021070033C6E8 /* Info.plist */,
+				ABD92A6F2B50245300764EE7 /* AppDelegate.swift */,
+				ABD92A712B50245300764EE7 /* SceneDelegate.swift */,
+				ABD92A732B50245300764EE7 /* ViewController.swift */,
+				ABD92A752B50245300764EE7 /* Main.storyboard */,
+				ABD92A782B50245400764EE7 /* Assets.xcassets */,
+				ABD92A7A2B50245400764EE7 /* LaunchScreen.storyboard */,
+				ABD92A7D2B50245400764EE7 /* Info.plist */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
 		};
-		ABB400FE2B5021070033C6E8 /* EssentialAppTests */ = {
+		ABD92A852B50245400764EE7 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				ABB400FF2B5021070033C6E8 /* EssentialAppTests.swift */,
+				ABD92A862B50245400764EE7 /* EssentialAppTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
 		};
-		ABB401082B5021070033C6E8 /* EssentialAppUITests */ = {
+		ABD92A8F2B50245400764EE7 /* EssentialAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				ABB401092B5021070033C6E8 /* EssentialAppUITests.swift */,
-				ABB4010B2B5021070033C6E8 /* EssentialAppUITestsLaunchTests.swift */,
+				ABD92A902B50245400764EE7 /* EssentialAppUITests.swift */,
+				ABD92A922B50245400764EE7 /* EssentialAppUITestsLaunchTests.swift */,
 			);
 			path = EssentialAppUITests;
 			sourceTree = "<group>";
@@ -130,13 +130,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABB400E42B5021050033C6E8 /* EssentialApp */ = {
+		ABD92A6B2B50245300764EE7 /* EssentialApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABB4010F2B5021070033C6E8 /* Build configuration list for PBXNativeTarget "EssentialApp" */;
+			buildConfigurationList = ABD92A962B50245400764EE7 /* Build configuration list for PBXNativeTarget "EssentialApp" */;
 			buildPhases = (
-				ABB400E12B5021050033C6E8 /* Sources */,
-				ABB400E22B5021050033C6E8 /* Frameworks */,
-				ABB400E32B5021050033C6E8 /* Resources */,
+				ABD92A682B50245300764EE7 /* Sources */,
+				ABD92A692B50245300764EE7 /* Frameworks */,
+				ABD92A6A2B50245300764EE7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,69 +144,69 @@
 			);
 			name = EssentialApp;
 			productName = EssentialApp;
-			productReference = ABB400E52B5021050033C6E8 /* EssentialApp.app */;
+			productReference = ABD92A6C2B50245300764EE7 /* EssentialApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ABB400FA2B5021070033C6E8 /* EssentialAppTests */ = {
+		ABD92A812B50245400764EE7 /* EssentialAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABB401122B5021070033C6E8 /* Build configuration list for PBXNativeTarget "EssentialAppTests" */;
+			buildConfigurationList = ABD92A992B50245400764EE7 /* Build configuration list for PBXNativeTarget "EssentialAppTests" */;
 			buildPhases = (
-				ABB400F72B5021070033C6E8 /* Sources */,
-				ABB400F82B5021070033C6E8 /* Frameworks */,
-				ABB400F92B5021070033C6E8 /* Resources */,
+				ABD92A7E2B50245400764EE7 /* Sources */,
+				ABD92A7F2B50245400764EE7 /* Frameworks */,
+				ABD92A802B50245400764EE7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ABB400FD2B5021070033C6E8 /* PBXTargetDependency */,
+				ABD92A842B50245400764EE7 /* PBXTargetDependency */,
 			);
 			name = EssentialAppTests;
 			productName = EssentialAppTests;
-			productReference = ABB400FB2B5021070033C6E8 /* EssentialAppTests.xctest */;
+			productReference = ABD92A822B50245400764EE7 /* EssentialAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ABB401042B5021070033C6E8 /* EssentialAppUITests */ = {
+		ABD92A8B2B50245400764EE7 /* EssentialAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABB401152B5021070033C6E8 /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */;
+			buildConfigurationList = ABD92A9C2B50245400764EE7 /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */;
 			buildPhases = (
-				ABB401012B5021070033C6E8 /* Sources */,
-				ABB401022B5021070033C6E8 /* Frameworks */,
-				ABB401032B5021070033C6E8 /* Resources */,
+				ABD92A882B50245400764EE7 /* Sources */,
+				ABD92A892B50245400764EE7 /* Frameworks */,
+				ABD92A8A2B50245400764EE7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ABB401072B5021070033C6E8 /* PBXTargetDependency */,
+				ABD92A8E2B50245400764EE7 /* PBXTargetDependency */,
 			);
 			name = EssentialAppUITests;
 			productName = EssentialAppUITests;
-			productReference = ABB401052B5021070033C6E8 /* EssentialAppUITests.xctest */;
+			productReference = ABD92A8C2B50245400764EE7 /* EssentialAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ABB400DD2B5021050033C6E8 /* Project object */ = {
+		ABD92A642B50245300764EE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					ABB400E42B5021050033C6E8 = {
+					ABD92A6B2B50245300764EE7 = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					ABB400FA2B5021070033C6E8 = {
+					ABD92A812B50245400764EE7 = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = ABB400E42B5021050033C6E8;
+						TestTargetID = ABD92A6B2B50245300764EE7;
 					};
-					ABB401042B5021070033C6E8 = {
+					ABD92A8B2B50245400764EE7 = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = ABB400E42B5021050033C6E8;
+						TestTargetID = ABD92A6B2B50245300764EE7;
 					};
 				};
 			};
-			buildConfigurationList = ABB400E02B5021050033C6E8 /* Build configuration list for PBXProject "EssentialApp" */;
+			buildConfigurationList = ABD92A672B50245300764EE7 /* Build configuration list for PBXProject "EssentialApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +214,37 @@
 				en,
 				Base,
 			);
-			mainGroup = ABB400DC2B5021050033C6E8;
-			productRefGroup = ABB400E62B5021050033C6E8 /* Products */;
+			mainGroup = ABD92A632B50245300764EE7;
+			productRefGroup = ABD92A6D2B50245300764EE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABB400E42B5021050033C6E8 /* EssentialApp */,
-				ABB400FA2B5021070033C6E8 /* EssentialAppTests */,
-				ABB401042B5021070033C6E8 /* EssentialAppUITests */,
+				ABD92A6B2B50245300764EE7 /* EssentialApp */,
+				ABD92A812B50245400764EE7 /* EssentialAppTests */,
+				ABD92A8B2B50245400764EE7 /* EssentialAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ABB400E32B5021050033C6E8 /* Resources */ = {
+		ABD92A6A2B50245300764EE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB400F52B5021070033C6E8 /* LaunchScreen.storyboard in Resources */,
-				ABB400F22B5021070033C6E8 /* Assets.xcassets in Resources */,
-				ABB400F02B5021050033C6E8 /* Main.storyboard in Resources */,
+				ABD92A7C2B50245400764EE7 /* LaunchScreen.storyboard in Resources */,
+				ABD92A792B50245400764EE7 /* Assets.xcassets in Resources */,
+				ABD92A772B50245300764EE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABB400F92B5021070033C6E8 /* Resources */ = {
+		ABD92A802B50245400764EE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABB401032B5021070033C6E8 /* Resources */ = {
+		ABD92A8A2B50245400764EE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,61 +254,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ABB400E12B5021050033C6E8 /* Sources */ = {
+		ABD92A682B50245300764EE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB400ED2B5021050033C6E8 /* ViewController.swift in Sources */,
-				ABB400E92B5021050033C6E8 /* AppDelegate.swift in Sources */,
-				ABB400EB2B5021050033C6E8 /* SceneDelegate.swift in Sources */,
+				ABD92A742B50245300764EE7 /* ViewController.swift in Sources */,
+				ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */,
+				ABD92A722B50245300764EE7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABB400F72B5021070033C6E8 /* Sources */ = {
+		ABD92A7E2B50245400764EE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB401002B5021070033C6E8 /* EssentialAppTests.swift in Sources */,
+				ABD92A872B50245400764EE7 /* EssentialAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABB401012B5021070033C6E8 /* Sources */ = {
+		ABD92A882B50245400764EE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB4010A2B5021070033C6E8 /* EssentialAppUITests.swift in Sources */,
-				ABB4010C2B5021070033C6E8 /* EssentialAppUITestsLaunchTests.swift in Sources */,
+				ABD92A912B50245400764EE7 /* EssentialAppUITests.swift in Sources */,
+				ABD92A932B50245400764EE7 /* EssentialAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ABB400FD2B5021070033C6E8 /* PBXTargetDependency */ = {
+		ABD92A842B50245400764EE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ABB400E42B5021050033C6E8 /* EssentialApp */;
-			targetProxy = ABB400FC2B5021070033C6E8 /* PBXContainerItemProxy */;
+			target = ABD92A6B2B50245300764EE7 /* EssentialApp */;
+			targetProxy = ABD92A832B50245400764EE7 /* PBXContainerItemProxy */;
 		};
-		ABB401072B5021070033C6E8 /* PBXTargetDependency */ = {
+		ABD92A8E2B50245400764EE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ABB400E42B5021050033C6E8 /* EssentialApp */;
-			targetProxy = ABB401062B5021070033C6E8 /* PBXContainerItemProxy */;
+			target = ABD92A6B2B50245300764EE7 /* EssentialApp */;
+			targetProxy = ABD92A8D2B50245400764EE7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ABB400EE2B5021050033C6E8 /* Main.storyboard */ = {
+		ABD92A752B50245300764EE7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABB400EF2B5021050033C6E8 /* Base */,
+				ABD92A762B50245300764EE7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ABB400F32B5021070033C6E8 /* LaunchScreen.storyboard */ = {
+		ABD92A7A2B50245400764EE7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABB400F42B5021070033C6E8 /* Base */,
+				ABD92A7B2B50245400764EE7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ABB4010D2B5021070033C6E8 /* Debug */ = {
+		ABD92A942B50245400764EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,7 +379,7 @@
 			};
 			name = Debug;
 		};
-		ABB4010E2B5021070033C6E8 /* Release */ = {
+		ABD92A952B50245400764EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -435,7 +435,7 @@
 			};
 			name = Release;
 		};
-		ABB401102B5021070033C6E8 /* Debug */ = {
+		ABD92A972B50245400764EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -448,8 +448,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +463,7 @@
 			};
 			name = Debug;
 		};
-		ABB401112B5021070033C6E8 /* Release */ = {
+		ABD92A982B50245400764EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -476,8 +476,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,7 +491,7 @@
 			};
 			name = Release;
 		};
-		ABB401132B5021070033C6E8 /* Debug */ = {
+		ABD92A9A2B50245400764EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -511,7 +511,7 @@
 			};
 			name = Debug;
 		};
-		ABB401142B5021070033C6E8 /* Release */ = {
+		ABD92A9B2B50245400764EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -531,7 +531,7 @@
 			};
 			name = Release;
 		};
-		ABB401162B5021070033C6E8 /* Debug */ = {
+		ABD92A9D2B50245400764EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -549,7 +549,7 @@
 			};
 			name = Debug;
 		};
-		ABB401172B5021070033C6E8 /* Release */ = {
+		ABD92A9E2B50245400764EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -570,43 +570,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABB400E02B5021050033C6E8 /* Build configuration list for PBXProject "EssentialApp" */ = {
+		ABD92A672B50245300764EE7 /* Build configuration list for PBXProject "EssentialApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABB4010D2B5021070033C6E8 /* Debug */,
-				ABB4010E2B5021070033C6E8 /* Release */,
+				ABD92A942B50245400764EE7 /* Debug */,
+				ABD92A952B50245400764EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABB4010F2B5021070033C6E8 /* Build configuration list for PBXNativeTarget "EssentialApp" */ = {
+		ABD92A962B50245400764EE7 /* Build configuration list for PBXNativeTarget "EssentialApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABB401102B5021070033C6E8 /* Debug */,
-				ABB401112B5021070033C6E8 /* Release */,
+				ABD92A972B50245400764EE7 /* Debug */,
+				ABD92A982B50245400764EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABB401122B5021070033C6E8 /* Build configuration list for PBXNativeTarget "EssentialAppTests" */ = {
+		ABD92A992B50245400764EE7 /* Build configuration list for PBXNativeTarget "EssentialAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABB401132B5021070033C6E8 /* Debug */,
-				ABB401142B5021070033C6E8 /* Release */,
+				ABD92A9A2B50245400764EE7 /* Debug */,
+				ABD92A9B2B50245400764EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABB401152B5021070033C6E8 /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */ = {
+		ABD92A9C2B50245400764EE7 /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABB401162B5021070033C6E8 /* Debug */,
-				ABB401172B5021070033C6E8 /* Release */,
+				ABD92A9D2B50245400764EE7 /* Debug */,
+				ABD92A9E2B50245400764EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ABB400DD2B5021050033C6E8 /* Project object */;
+	rootObject = ABD92A642B50245300764EE7 /* Project object */;
 }
