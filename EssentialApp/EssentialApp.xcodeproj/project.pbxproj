@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB3A81B62B53B7E2001C5346 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A81B52B53B7E2001C5346 /* XCTestCase+Helpers.swift */; };
+		ABB0F58F2B53BD580026ECEB /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB0F58D2B53BD580026ECEB /* EssentialFeed.framework */; };
+		ABB0F5902B53BD580026ECEB /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABB0F58D2B53BD580026ECEB /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABB0F5912B53BD580026ECEB /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB0F58E2B53BD580026ECEB /* EssentialFeediOS.framework */; };
+		ABB0F5922B53BD580026ECEB /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABB0F58E2B53BD580026ECEB /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A6F2B50245300764EE7 /* AppDelegate.swift */; };
 		ABD92A722B50245300764EE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A712B50245300764EE7 /* SceneDelegate.swift */; };
 		ABD92A742B50245300764EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A732B50245300764EE7 /* ViewController.swift */; };
@@ -33,6 +38,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				ABB0F5902B53BD580026ECEB /* EssentialFeed.framework in Embed Frameworks */,
+				ABB0F5922B53BD580026ECEB /* EssentialFeediOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +47,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB3A81B52B53B7E2001C5346 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
+		ABB0F58D2B53BD580026ECEB /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB0F58E2B53BD580026ECEB /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD92A6C2B50245300764EE7 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD92A6F2B50245300764EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD92A712B50245300764EE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB0F58F2B53BD580026ECEB /* EssentialFeed.framework in Frameworks */,
+				ABB0F5912B53BD580026ECEB /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +85,8 @@
 		AB44BFEF2B502A3900B066AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABB0F58D2B53BD580026ECEB /* EssentialFeed.framework */,
+				ABB0F58E2B53BD580026ECEB /* EssentialFeediOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				ABD92A862B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift */,
+				AB3A81B52B53B7E2001C5346 /* XCTestCase+Helpers.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -230,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3A81B62B53B7E2001C5346 /* XCTestCase+Helpers.swift in Sources */,
 				ABD92A872B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +413,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,7 +440,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

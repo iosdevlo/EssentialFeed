@@ -10,13 +10,23 @@ import EssentialFeed
 
 class FeedLoaderWithFallbackComposite: FeedLoader {
     private let primary: FeedLoader
+    private let fallback: FeedLoader
     
     init(primary: FeedLoader, fallback: FeedLoader) {
         self.primary = primary
+        self.fallback = fallback
     }
     
     func load(completion: @escaping (FeedLoader.Result) -> Void) {
-        primary.load(completion: completion)
+        primary.load { [weak self] result in
+
+            switch result {
+            case .success: completion(result)
+                
+            case .failure:
+                self?.fallback.load(completion: completion)
+            }
+        }
     }
 }
 
@@ -27,20 +37,14 @@ class RemoteWithFallbackCompositeTests: XCTestCase {
         let fallbackFeed = uniqueFeed()
         let sut = makeSUT(primaryResult: .success(primaryFeed), fallbackResult: .success(fallbackFeed))
         
-        let expectation = expectation(description: "Wait for load completion")
+        expect(sut, toCompleteWith: .success(primaryFeed))
+    }
+    
+    func test_load_deliversFallbackFeedOnPrimaryFailure() {
+        let fallbackFeed = uniqueFeed()
+        let sut = makeSUT(primaryResult: .failure(anyNSError()), fallbackResult: .success(fallbackFeed))
         
-        sut.load { result in
-            switch result {
-            case let .success(receivedFeed):
-                XCTAssertEqual(receivedFeed, primaryFeed)
-                
-            case .failure:
-                XCTFail("Expected successful load feed result, got \(result) instead")
-            }
-            expectation.fulfill()
-        }
-        
-        wait(for: [expectation], timeout: 1.0)
+        expect(sut, toCompleteWith: .success(fallbackFeed))
     }
     
     // MARK: - Helpers
@@ -57,8 +61,28 @@ class RemoteWithFallbackCompositeTests: XCTestCase {
         return sut
     }
     
+    private func expect(_ sut: FeedLoader, toCompleteWith expectedResult: FeedLoader.Result, file: StaticString = #filePath, line: UInt = #line) {
+        
+        let expectation = expectation(description: "Wait for load completion")
+        
+        sut.load { receivedResult in
+            switch (receivedResult, expectedResult) {
+            case let (.success(receivedFeed), .success(expectedFeed)):
+                XCTAssertEqual(receivedFeed, expectedFeed)
+                
+            case (.failure, .failure): break
+           
+            default:
+                XCTFail("Expected \(expectedResult), got \(receivedResult) instead")
+            }
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 1.0)
+    }
+    
     func uniqueFeed() -> [FeedImage] {
-        return [FeedImage(id: UUID(), description: "any", location: "any", url: URL(string: "http://any-url.com")!)]
+        return [FeedImage(id: UUID(), description: "any", location: "any", url: anyURL())]
     }
     
     private class LoaderStub: FeedLoader {
@@ -70,14 +94,6 @@ class RemoteWithFallbackCompositeTests: XCTestCase {
         
         func load(completion: @escaping (FeedLoader.Result) -> Void) {
             completion(result)
-        }
-    }
-}
-
-extension XCTestCase {
-    func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #filePath, line: UInt = #line) {
-        addTeardownBlock { [weak instance] in
-            XCTAssertNil(instance, "Instance should have been deallocated Potential memory leak.", file: file, line: line)
         }
     }
 }
