@@ -20,6 +20,8 @@
 		ABB0F59F2B5553E90026ECEB /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F59E2B5553E90026ECEB /* FeedLoaderStub.swift */; };
 		ABB0F5A12B5554A60026ECEB /* XCTTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5A02B5554A60026ECEB /* XCTTestCase+FeedLoader.swift */; };
 		ABB0F5B32B555FDB0026ECEB /* FeedLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5B22B555FDB0026ECEB /* FeedLoaderCacheDecorator.swift */; };
+		ABB0F5B52B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5B42B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift */; };
+		ABB0F5B72B5562970026ECEB /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5B62B5562970026ECEB /* FeedImageDataLoaderSpy.swift */; };
 		ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A6F2B50245300764EE7 /* AppDelegate.swift */; };
 		ABD92A722B50245300764EE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A712B50245300764EE7 /* SceneDelegate.swift */; };
 		ABD92A742B50245300764EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A732B50245300764EE7 /* ViewController.swift */; };
@@ -66,6 +68,8 @@
 		ABB0F59E2B5553E90026ECEB /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
 		ABB0F5A02B5554A60026ECEB /* XCTTestCase+FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTTestCase+FeedLoader.swift"; sourceTree = "<group>"; };
 		ABB0F5B22B555FDB0026ECEB /* FeedLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecorator.swift; sourceTree = "<group>"; };
+		ABB0F5B42B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
+		ABB0F5B62B5562970026ECEB /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
 		ABD92A6C2B50245300764EE7 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD92A6F2B50245300764EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD92A712B50245300764EE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				ABB0F59C2B5553CF0026ECEB /* MemoryLeaksTracker.swift */,
 				ABB0F59E2B5553E90026ECEB /* FeedLoaderStub.swift */,
 				ABB0F5A02B5554A60026ECEB /* XCTTestCase+FeedLoader.swift */,
+				ABB0F5B62B5562970026ECEB /* FeedImageDataLoaderSpy.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -158,9 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				ABD92A862B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift */,
-				ABB0F59B2B5553BB0026ECEB /* Helpers */,
 				ABB0F5972B53CD290026ECEB /* FeedLoaderWithFallbackCompositeTests.swift */,
 				ABB0F5992B55515B0026ECEB /* FeedLoaderCacheDecoratorTests.swift */,
+				ABB0F59B2B5553BB0026ECEB /* Helpers */,
+				ABB0F5B42B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -281,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABB0F5A12B5554A60026ECEB /* XCTTestCase+FeedLoader.swift in Sources */,
+				ABB0F5B52B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift in Sources */,
 				AB3A81B62B53B7E2001C5346 /* XCTestCase+Helpers.swift in Sources */,
 				ABD92A872B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift in Sources */,
+				ABB0F5B72B5562970026ECEB /* FeedImageDataLoaderSpy.swift in Sources */,
 				ABB0F59D2B5553CF0026ECEB /* MemoryLeaksTracker.swift in Sources */,
 				ABB0F5982B53CD290026ECEB /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				ABB0F59F2B5553E90026ECEB /* FeedLoaderStub.swift in Sources */,
