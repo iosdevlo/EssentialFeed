@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import EssentialFeed
 
 extension XCTestCase {
     func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #filePath, line: UInt = #line) {
@@ -34,5 +35,9 @@ extension XCTestCase {
     
     func anyData() -> Data {
         return Data("any data".utf8)
+    }
+    
+    func uniqueFeed() -> [FeedImage] {
+        return [FeedImage(id: UUID(), description: "any", location: "any", url: anyURL())]
     }
 }
