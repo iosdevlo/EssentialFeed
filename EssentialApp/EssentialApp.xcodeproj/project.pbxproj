@@ -25,7 +25,6 @@
 		ABB0F5B92B55636B0026ECEB /* XCTestCase+FeedImageDataLoaderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5B82B55636B0026ECEB /* XCTestCase+FeedImageDataLoaderTestCase.swift */; };
 		ABB0F5BD2B55653F0026ECEB /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5BC2B55653F0026ECEB /* FeedImageDataLoaderCacheDecorator.swift */; };
 		ABB0F5C52B5897A00026ECEB /* EssentialAppUIAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5C42B5897A00026ECEB /* EssentialAppUIAcceptanceTests.swift */; };
-		ABB0F5C72B5897A00026ECEB /* EssentialAppUIAcceptanceTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5C62B5897A00026ECEB /* EssentialAppUIAcceptanceTestsLaunchTests.swift */; };
 		ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A6F2B50245300764EE7 /* AppDelegate.swift */; };
 		ABD92A722B50245300764EE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A712B50245300764EE7 /* SceneDelegate.swift */; };
 		ABD92A742B50245300764EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A732B50245300764EE7 /* ViewController.swift */; };
@@ -85,7 +84,6 @@
 		ABB0F5BC2B55653F0026ECEB /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		ABB0F5C22B5897A00026ECEB /* EssentialAppUIAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUIAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB0F5C42B5897A00026ECEB /* EssentialAppUIAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTests.swift; sourceTree = "<group>"; };
-		ABB0F5C62B5897A00026ECEB /* EssentialAppUIAcceptanceTestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTestsLaunchTests.swift; sourceTree = "<group>"; };
 		ABD92A6C2B50245300764EE7 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD92A6F2B50245300764EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD92A712B50245300764EE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				ABB0F5C42B5897A00026ECEB /* EssentialAppUIAcceptanceTests.swift */,
-				ABB0F5C62B5897A00026ECEB /* EssentialAppUIAcceptanceTestsLaunchTests.swift */,
 			);
 			path = EssentialAppUIAcceptanceTests;
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB0F5C72B5897A00026ECEB /* EssentialAppUIAcceptanceTestsLaunchTests.swift in Sources */,
 				ABB0F5C52B5897A00026ECEB /* EssentialAppUIAcceptanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
