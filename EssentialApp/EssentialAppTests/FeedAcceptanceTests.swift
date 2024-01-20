@@ -20,17 +20,20 @@ final class FeedAcceptanceTests: XCTestCase {
     }
     
     func test_onLaunch_displaysCachedRemoteFeedWhenCustomerHasNoConnectivity() {
-        let sut = SceneDelegate()
-        sut.window = UIWindow()
+        let sharedStore = InMemoryFeedStore.empty
+        let onlineFeed =  launch(httpClient: .online(response), store: sharedStore)
+        onlineFeed.simulateFeedImageViewVisible(at: 0)
+        onlineFeed.simulateFeedImageViewVisible(at: 1)
         
-        sut.configureWindow()
+        let offlineFeed = launch(httpClient: .offLine, store: sharedStore)
+        
+        XCTAssertEqual(offlineFeed.numberOfRenderedFeedImageViews(), 2)
+        XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 0), makeImageData())
+        XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 1), makeImageData())
     }
     
     func test_onLaunch_displaysEmptyFeedWhenCustomerHasNoConnectivityAndNoCache() {
-        let sut = SceneDelegate()
-        sut.window = UIWindow()
         
-        sut.configureWindow()
     }
     
     // MARK: - Helpers
@@ -44,7 +47,9 @@ final class FeedAcceptanceTests: XCTestCase {
         sut.configureWindow()
         
         let nav = sut.window?.rootViewController as? UINavigationController
-        return nav?.topViewController as! FeedViewController
+        let vc = nav?.topViewController as! FeedViewController
+        vc.simulateAppearance()
+        return vc
     }
     
     private class HTTPClientStub: HTTPClient {
