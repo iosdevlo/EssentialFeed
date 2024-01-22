@@ -34,6 +34,13 @@ class FeedSnapshotTests: XCTestCase {
         record(snapshot: sut.snapshot(), named: "FEED_WITH_ERROR_MESSAGE")
     }
     
+    func test_feedWithFailedImageLoading() {
+        let sut = makeSUT()
+        
+        sut.display(feedWithFailedImageLoaing())
+        
+        record(snapshot: sut.snapshot(), named: "FEED_WITH_FAILED_IMAGE_LOADING")
+    }
     
     // MARK: - Helpers
     
@@ -81,6 +88,13 @@ class FeedSnapshotTests: XCTestCase {
                 location: "Garth Pier",
                 image: UIImage.make(withColor: .green)
             )
+        ]
+    }
+    
+    private func feedWithFailedImageLoaing() -> [ImageStub] {
+        return [
+            ImageStub(description: nil, location: "Cannon Street, London", image: nil),
+            ImageStub(description: nil, location: "Brighton Seafront", image: nil)
         ]
     }
 }
