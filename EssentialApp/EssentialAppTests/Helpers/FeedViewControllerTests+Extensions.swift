@@ -58,10 +58,6 @@ extension FeedViewController {
         return errorView?.message
     }
     
-    func simulateTapOnErrorButton() {
-        errorView?.button.simulateTap()
-    }
-    
     @discardableResult
     func simulateFeedImageViewVisible(at index: Int) -> FeedImageCell? {
         return feedImageView(at: index) as? FeedImageCell
