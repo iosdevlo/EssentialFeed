@@ -8,6 +8,7 @@
 import XCTest
 import EssentialFeed
 import EssentialFeediOS
+import EssentialFeedAPI
 @testable import EssentialApp
 
 final class FeedAcceptanceTests: XCTestCase {
@@ -28,8 +29,8 @@ final class FeedAcceptanceTests: XCTestCase {
         let offlineFeed = launch(httpClient: .offLine, store: sharedStore)
         
         XCTAssertEqual(offlineFeed.numberOfRenderedFeedImageViews(), 2)
-        XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 0), makeImageData())
-        XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 1), makeImageData())
+        XCTAssertEqual(onlineFeed.renderedFeedImageData(at: 0), makeImageData())
+        XCTAssertEqual(onlineFeed.renderedFeedImageData(at: 1), makeImageData())
     }
     
     func test_onLaunch_displaysEmptyFeedWhenCustomerHasNoConnectivityAndNoCache() {
@@ -86,7 +87,7 @@ final class FeedAcceptanceTests: XCTestCase {
             self.stub = stub
         }
         
-        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) -> EssentialFeed.HTTPClientTask {
+        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) -> EssentialFeedAPI.HTTPClientTask {
             completion(stub(url))
             return Task()
         }
