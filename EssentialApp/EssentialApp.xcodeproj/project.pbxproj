@@ -28,6 +28,7 @@
 		ABC2ADCF2B5C0C1C00A4F299 /* FeedViewControllerTests+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2ADCE2B5C0C1C00A4F299 /* FeedViewControllerTests+Extensions.swift */; };
 		ABC2ADD12B5C0C7C00A4F299 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2ADD02B5C0C7C00A4F299 /* FeedUIIntegrationTests.swift */; };
 		ABC2ADD32B5C10FB00A4F299 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2ADD22B5C10FB00A4F299 /* FeedAcceptanceTests.swift */; };
+		ABCECE9D2B66DF19000E1507 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCECE9C2B66DF19000E1507 /* CombineHelpers.swift */; };
 		ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A6F2B50245300764EE7 /* AppDelegate.swift */; };
 		ABD92A722B50245300764EE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A712B50245300764EE7 /* SceneDelegate.swift */; };
 		ABD92A742B50245300764EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A732B50245300764EE7 /* ViewController.swift */; };
@@ -81,6 +82,7 @@
 		ABC2ADCE2B5C0C1C00A4F299 /* FeedViewControllerTests+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Extensions.swift"; sourceTree = "<group>"; };
 		ABC2ADD02B5C0C7C00A4F299 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		ABC2ADD22B5C10FB00A4F299 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
+		ABCECE9C2B66DF19000E1507 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		ABD92A6C2B50245300764EE7 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD92A6F2B50245300764EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD92A712B50245300764EE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				ABD92A782B50245400764EE7 /* Assets.xcassets */,
 				ABD92A7A2B50245400764EE7 /* LaunchScreen.storyboard */,
 				ABD92A7D2B50245400764EE7 /* Info.plist */,
+				ABCECE9C2B66DF19000E1507 /* CombineHelpers.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				ABC2ADCC2B5C0B2A00A4F299 /* FeedViewAdapter.swift in Sources */,
 				ABC2ADC92B5C0B2A00A4F299 /* WeakRefVirtualProxy.swift in Sources */,
+				ABCECE9D2B66DF19000E1507 /* CombineHelpers.swift in Sources */,
 				ABC2ADCA2B5C0B2A00A4F299 /* FeedUIComposer.swift in Sources */,
 				ABD92A742B50245300764EE7 /* ViewController.swift in Sources */,
 				ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */,
