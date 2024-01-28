@@ -18,7 +18,6 @@
 		ABB0F59D2B5553CF0026ECEB /* MemoryLeaksTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F59C2B5553CF0026ECEB /* MemoryLeaksTracker.swift */; };
 		ABB0F59F2B5553E90026ECEB /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F59E2B5553E90026ECEB /* FeedLoaderStub.swift */; };
 		ABB0F5A12B5554A60026ECEB /* XCTTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5A02B5554A60026ECEB /* XCTTestCase+FeedLoader.swift */; };
-		ABB0F5B52B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5B42B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift */; };
 		ABB0F5B72B5562970026ECEB /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5B62B5562970026ECEB /* FeedImageDataLoaderSpy.swift */; };
 		ABB0F5B92B55636B0026ECEB /* XCTestCase+FeedImageDataLoaderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5B82B55636B0026ECEB /* XCTestCase+FeedImageDataLoaderTestCase.swift */; };
 		ABB0F5BD2B55653F0026ECEB /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5BC2B55653F0026ECEB /* FeedImageDataLoaderCacheDecorator.swift */; };
@@ -38,7 +37,6 @@
 		ABD92A772B50245300764EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A752B50245300764EE7 /* Main.storyboard */; };
 		ABD92A792B50245400764EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A782B50245400764EE7 /* Assets.xcassets */; };
 		ABD92A7C2B50245400764EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD92A7A2B50245400764EE7 /* LaunchScreen.storyboard */; };
-		ABD92A872B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD92A862B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +97,6 @@
 		ABD92A7B2B50245400764EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABD92A7D2B50245400764EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD92A822B50245400764EE7 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABD92A862B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				ABC2ADD02B5C0C7C00A4F299 /* FeedUIIntegrationTests.swift */,
-				ABD92A862B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift */,
 				ABB0F59B2B5553BB0026ECEB /* Helpers */,
 				ABB0F5B42B5562410026ECEB /* FeedImageDataLoaderCacheDecoratorTests.swift */,
 				ABB0F5CF2B5C070B0026ECEB /* SceneDelgateTests.swift */,
@@ -334,7 +330,6 @@
 				ABB0F5D02B5C070B0026ECEB /* SceneDelgateTests.swift in Sources */,
 				ABC2ADD32B5C10FB00A4F299 /* FeedAcceptanceTests.swift in Sources */,
 				ABB0F5B92B55636B0026ECEB /* XCTestCase+FeedImageDataLoaderTestCase.swift in Sources */,
-				ABD92A872B50245400764EE7 /* RemoteWithFallbackCompositeTests.swift in Sources */,
 				ABB0F5B72B5562970026ECEB /* FeedImageDataLoaderSpy.swift in Sources */,
 				ABB0F59D2B5553CF0026ECEB /* MemoryLeaksTracker.swift in Sources */,
 				ABC2ADCF2B5C0C1C00A4F299 /* FeedViewControllerTests+Extensions.swift in Sources */,
