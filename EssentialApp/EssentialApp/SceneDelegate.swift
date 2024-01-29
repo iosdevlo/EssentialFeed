@@ -47,10 +47,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func configureWindow() {
-        let feedViewController = FeedUIComposer.feedComposedWith(
-            feedLoader: makeRemoteFeedLoaderWithLocalFallback,
-            
-            imageLoader: makeLocalImageLoaderWithLocalFallback)
+        let feedViewController = FeedUIComposer.feedComposedWith(feedLoader: makeRemoteFeedLoaderWithLocalFallback,
+                                                                 imageLoader: makeLocalImageLoaderWithLocalFallback)
                 
         window?.rootViewController = UINavigationController(rootViewController: feedViewController)
     }
