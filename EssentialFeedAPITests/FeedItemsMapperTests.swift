@@ -78,9 +78,3 @@ class FeedItemsMapperTests: XCTestCase {
         return try! JSONSerialization.data(withJSONObject: json)
     }
 }
-
-private extension HTTPURLResponse {
-    convenience init(code: Int) {
-        self.init(url: anyURL(), statusCode: code, httpVersion: nil, headerFields: nil)!
-    }
-}
