@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB3A81B62B53B7E2001C5346 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A81B52B53B7E2001C5346 /* XCTestCase+Helpers.swift */; };
-		AB59F02B2B66DAEB00C6D7BF /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59F02A2B66DAEB00C6D7BF /* FeedLoaderPresentationAdapter.swift */; };
+		AB59F02B2B66DAEB00C6D7BF /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59F02A2B66DAEB00C6D7BF /* LoadResourcePresentationAdapter.swift */; };
 		AB727E972B606CE70099130E /* EssentialFeedAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB727E962B606CE70099130E /* EssentialFeedAPI.framework */; };
 		AB727E982B606CE70099130E /* EssentialFeedAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB727E962B606CE70099130E /* EssentialFeedAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABB0F58F2B53BD580026ECEB /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB0F58D2B53BD580026ECEB /* EssentialFeed.framework */; };
@@ -64,7 +64,7 @@
 
 /* Begin PBXFileReference section */
 		AB3A81B52B53B7E2001C5346 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
-		AB59F02A2B66DAEB00C6D7BF /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		AB59F02A2B66DAEB00C6D7BF /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		AB727E962B606CE70099130E /* EssentialFeedAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeedAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB0F58D2B53BD580026ECEB /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB0F58E2B53BD580026ECEB /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +167,7 @@
 		ABD92A6E2B50245300764EE7 /* EssentialApp */ = {
 			isa = PBXGroup;
 			children = (
-				AB59F02A2B66DAEB00C6D7BF /* FeedLoaderPresentationAdapter.swift */,
+				AB59F02A2B66DAEB00C6D7BF /* LoadResourcePresentationAdapter.swift */,
 				ABC2ADC42B5C0B2A00A4F299 /* WeakRefVirtualProxy.swift */,
 				ABC2ADC52B5C0B2A00A4F299 /* FeedViewAdapter.swift */,
 				ABC2ADCD2B5C0B3A00A4F299 /* Composer */,
@@ -303,7 +303,7 @@
 				ABD92A742B50245300764EE7 /* ViewController.swift in Sources */,
 				ABD92A702B50245300764EE7 /* AppDelegate.swift in Sources */,
 				ABD92A722B50245300764EE7 /* SceneDelegate.swift in Sources */,
-				AB59F02B2B66DAEB00C6D7BF /* FeedLoaderPresentationAdapter.swift in Sources */,
+				AB59F02B2B66DAEB00C6D7BF /* LoadResourcePresentationAdapter.swift in Sources */,
 				ABC2ADC22B5C0B0200A4F299 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
