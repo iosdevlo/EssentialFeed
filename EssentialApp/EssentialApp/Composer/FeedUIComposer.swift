@@ -17,7 +17,8 @@ public final class FeedUIComposer {
                                         imageLoader: @escaping (URL) -> FeedImageDataLoader.Publisher) -> ListViewController {
         let presentationAdapter = LoadResourcePresentationAdapter<[FeedImage], FeedViewAdapter>(loader: feedLoader)
         
-        let feedController = ListViewController.makeWith(delegate: presentationAdapter, title: FeedPresenter.title)
+        let feedController = ListViewController.makeWith(title: FeedPresenter.title)
+        feedController.onRefresh = presentationAdapter.loadResource
         
         presentationAdapter.presenter = LoadResourcePresenter(
             loadingView: WeakRefVirtualProxy(feedController),

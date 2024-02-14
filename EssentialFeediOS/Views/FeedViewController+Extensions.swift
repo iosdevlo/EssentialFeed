@@ -8,12 +8,11 @@
 import UIKit
 
 extension ListViewController {
-    static public func makeWith(delegate: FeedViewControllerDelegate, title: String) -> ListViewController {
+    static public func makeWith(title: String) -> ListViewController {
         let bundle = Bundle(for: ListViewController.self)
         let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
         
         let feedController = storyboard.instantiateInitialViewController() as! ListViewController
-        feedController.delegate = delegate
         feedController.title = title
         return feedController
     }
