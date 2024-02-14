@@ -23,6 +23,6 @@ class SceneDelgateTests: XCTestCase {
         
         XCTAssertTrue(sut.window?.rootViewController is UINavigationController)
         XCTAssertNotNil(rootNavigation, "Expected a navigation controoler as root, got \(String(describing: root)) instead")
-        XCTAssertTrue(topController is FeedViewController, "Expected a feed controller as top view controller, got \(String(describing: topController)) instead")
+        XCTAssertTrue(topController is ListViewController, "Expected a feed controller as top view controller, got \(String(describing: topController)) instead")
     }
 }

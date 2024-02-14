@@ -24,7 +24,7 @@ extension FeedUIIntegrationTests {
     }
 }
 
-extension FeedViewController {
+extension ListViewController {
     func simulateAppearance() {
         if !isViewLoaded {
             loadViewIfNeeded()
