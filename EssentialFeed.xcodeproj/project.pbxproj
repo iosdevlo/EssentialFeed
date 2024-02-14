@@ -459,6 +459,35 @@
 			path = "Image Comments API";
 			sourceTree = "<group>";
 		};
+		AB3B44D72B7CF8A5008DB5D3 /* Shared UI */ = {
+			isa = PBXGroup;
+			children = (
+				AB3B44D92B7CF8C6008DB5D3 /* Views */,
+				AB3B44D82B7CF8B1008DB5D3 /* Controllers */,
+			);
+			path = "Shared UI";
+			sourceTree = "<group>";
+		};
+		AB3B44D82B7CF8B1008DB5D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABDFA1A72B37E9D60099F8AD /* ListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB3B44D92B7CF8C6008DB5D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB5546652B444E7700A34A48 /* FeedViewController+Extensions.swift */,
+				AB5546932B4A1E5400A34A48 /* UIRefreshControl+Extensions.swift */,
+				ABC2ADD82B5EAAF500A4F299 /* UITableView+HeaderSizing.swift */,
+				AB5546482B4218D000A34A48 /* UITableView+Extensions.swift */,
+				AB5546782B49F41C00A34A48 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AB41BB232B3000C600F4FD0C /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,12 +752,7 @@
 				AB5546462B4205BC00A34A48 /* Feed.storyboard */,
 				ABDFA1CF2B3A287A0099F8AD /* FeedImageCell.swift */,
 				ABDFA1D12B3A3E120099F8AD /* UIView+Shimmer.swift */,
-				AB5546482B4218D000A34A48 /* UITableView+Extensions.swift */,
 				AB55464A2B4219F100A34A48 /* UIImageView+Extensions.swift */,
-				AB5546652B444E7700A34A48 /* FeedViewController+Extensions.swift */,
-				AB5546782B49F41C00A34A48 /* ErrorView.swift */,
-				AB5546932B4A1E5400A34A48 /* UIRefreshControl+Extensions.swift */,
-				ABC2ADD82B5EAAF500A4F299 /* UITableView+HeaderSizing.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -736,7 +760,6 @@
 		ABDFA1D42B3B5A100099F8AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				ABDFA1A72B37E9D60099F8AD /* ListViewController.swift */,
 				ABDFA1DA2B3B610F0099F8AD /* FeedImageCellController.swift */,
 			);
 			path = Controllers;
@@ -745,6 +768,7 @@
 		ABE696CC2B51C0EF00CCAD4E /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				AB3B44D72B7CF8A5008DB5D3 /* Shared UI */,
 				AB71F4112B373D5600DE2C25 /* Assets.xcassets */,
 				AB71F4162B373D5600DE2C25 /* Info.plist */,
 				ABDFA1D42B3B5A100099F8AD /* Controllers */,
