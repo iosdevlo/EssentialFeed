@@ -9,7 +9,7 @@ import XCTest
 import EssentialFeediOS
 @testable import EssentialFeed
 
-class FeedSnapshotTests: XCTestCase {
+class ListSnapshotTests: XCTestCase {
     func test_emptyFeed() {
         let sut = makeSUT()
         
