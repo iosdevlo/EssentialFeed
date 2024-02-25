@@ -10,24 +10,6 @@ import EssentialFeediOS
 import Foundation
 import XCTest
 
-extension FeedUIIntegrationTests {
-    private class DummyView: ResourceView {
-        func display(_ viewModel: Any) {}
-    }
-    
-    var loadError: String {
-        LoadResourcePresenter<Any, DummyView>.loadError
-    }
-    
-    var feedTitle: String {
-        FeedPresenter.title
-    }
-    
-    var commentsTitle: String {
-        ImageCommentsPresenter.title
-    }
-}
-
 extension ListViewController {
     func simulateAppearance() {
         if !isViewLoaded {
@@ -71,7 +53,9 @@ extension ListViewController {
     var errorMessage: String? {
         return errorView.message
     }
+}
     
+extension ListViewController {
     @discardableResult
     func simulateFeedImageViewVisible(at index: Int) -> FeedImageCell? {
         return feedImageView(at: index) as? FeedImageCell
@@ -121,7 +105,35 @@ extension ListViewController {
         return ds?.tableView(tableView, cellForRowAt: index)
     }
     
-    private var feedImagesSection: Int { return 0 }
+    private var feedImagesSection: Int { return 0 } 
+}
+
+extension ListViewController {
+    private var commentsSection: Int { return 0 }
+    
+    func commentMessage(at row: Int) -> String? {
+        commentView(at: row)?.messageLabel.text
+    }
+    
+    func commentDate(at row: Int) -> String? {
+        commentView(at: row)?.dateLabel.text
+    }
+    
+    func commentUsername(at row: Int) -> String? {
+        commentView(at: row)?.usernameLabel.text
+    }
+    
+    private func commentView(at row: Int) -> ImageCommentCell? {
+        guard numberOfRenderedComments() > row else { return nil }
+        
+        let ds = tableView.dataSource
+        let index = IndexPath(row: row, section: commentsSection)
+        return ds?.tableView(tableView, cellForRowAt: index) as? ImageCommentCell
+    }
+    
+    func numberOfRenderedComments() -> Int {
+        tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: commentsSection)
+    }
 }
 
 extension FeedImageCell {
