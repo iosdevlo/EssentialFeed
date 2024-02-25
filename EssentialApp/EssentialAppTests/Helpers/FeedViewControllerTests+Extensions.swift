@@ -60,7 +60,7 @@ extension ListViewController {
         refreshControl = spyRefreshControl
     }
     
-    func simulateUserInitiatedFeedReload() {
+    func simulateUserInitiatedReload() {
         refreshControl?.simulatePullToRefresh()
     }
     
